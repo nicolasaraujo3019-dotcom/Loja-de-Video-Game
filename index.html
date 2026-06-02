@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub - Loja de Videogames</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header class="cabecalho">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-gamepad"></i> GameHub</h1>
+            </div>
+            
+            <div class="barra-pesquisa">
+                <input type="text" id="campo-pesquisa" placeholder="Pesquisar jogos, consoles e acessórios...">
+                <button id="botao-pesquisar"><i class="fas fa-search"></i> Buscar</button>
+            </div>
+
+            <div class="icones-cabecalho">
+                <a href="#" id="botao-minha-conta" class="icone-cabecalho">
+                    <i class="fas fa-user-circle"></i> Minha Conta
+                </a>
+                <a href="#" id="botao-carrinho" class="icone-cabecalho">
+                    <i class="fas fa-shopping-cart"></i> Carrinho 
+                    (<span id="qtd-carrinho">0</span>)
+                </a>
+            </div>
+        </div>
+
+        <!-- Menu de Navegação -->
+        <nav class="menu-navegacao">
+            <div class="container">
+                <ul>
+                    <li><a href="#" id="nav-loja"><i class="fas fa-store"></i> Navegue pela Loja</a></li>
+                    <li class="submenu">
+                        <a href="#" id="nav-categorias"><i class="fas fa-th-list"></i> Categorias ▾</a>
+                        <ul class="submenu-lista">
+                            <li><a href="#" data-categoria="consoles">Consoles</a></li>
+                            <li><a href="#" data-categoria="jogos">Jogos</a></li>
+                            <li><a href="#" data-categoria="acessorios">Acessórios</a></li>
+                            <li><a href="#" data-categoria="pecas">Peças e Manutenção</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="nav-atendimento"><i class="fas fa-headset"></i> Atendimento</a></li>
+                    <li><a href="#" id="nav-institucional"><i class="fas fa-building"></i> Institucional</a></li>
+                    <li><a href="#" id="nav-pedidos"><i class="fas fa-box"></i> Meus Pedidos</a></li>
+                    <li><a href="#" id="nav-rastrear"><i class="fas fa-truck"></i> Rastrear Pedido</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="conteudo-principal">
+        <section class="banner">
+            <div class="container">
+                <h2>Os Melhores Videogames e Acessórios Você Encontra Aqui!</h2>
+                <p>Entrega para todo o Brasil | Garantia e Qualidade</p>
+            </div>
+        </section>
+
+        <section class="produtos" id="secao-produtos">
+            <div class="container">
+                <h2>Produtos em Destaque</h2>
+                <div class="grade-produtos">
+                    <div class="card-produto" data-categoria="consoles">
+                        <img src="https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=300" alt="Console PlayStation 5">
+                        <h3>Console PlayStation 5</h3>
+                        <p class="preco">R$ 4.499,00</p>
+                        <button class="botao-comprar" data-nome="Console PlayStation 5" data-preco="4499.00">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+
+                    <div class="card-produto" data-categoria="consoles">
+                        <img src="https://images.unsplash.com/photo-1621259182978-fbf27b34b7d7?w=300" alt="Console Xbox Series X">
+                        <h3>Console Xbox Series X</h3>
+                        <p class="preco">R$ 4.399,00</p>
+                        <button class="botao-comprar" data-nome="Console Xbox Series X" data-preco="4399.00">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+
+                    <div class="card-produto" data-categoria="consoles">
+                        <img src="https://images.unsplash.com/photo-1578303244443-51ac6b0e1698?w=300" alt="Nintendo Switch OLED">
+                        <h3>Nintendo Switch OLED</h3>
+                        <p class="preco">R$ 2.199,00</p>
+                        <button class="botao-comprar" data-nome="Nintendo Switch OLED" data-preco="2199.00">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+
+                    <div class="card-produto" data-categoria="jogos">
+                        <img src="https://images.unsplash.com/photo-1632046798458-94012a4b8d34?w=300" alt="Jogo Super Mario Bros Wonder">
+                        <h3>Super Mario Bros Wonder</h3>
+                        <p class="preco">R$ 299,00</p>
+                        <button class="botao-comprar" data-nome="Super Mario Bros Wonder" data-preco="299.00">
+                            <i class="fas fa-cart-plus"></i> Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagamento">
+            <div class="container">
+                <h3><i class="fas fa-credit-card"></i> Pague com</h3>
+                <div class="bandeiras">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png" alt="Visa">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Elo_pagamentos_logo.svg/200px-Elo_pagamentos_logo.svg.png" alt="Elo">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png" alt="Mastercard">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Pix_logo.svg/200px-Pix_logo.svg.png" alt="Pix">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/American_Express_logo_%282018%29.svg/200px-American_Express_logo_%282018%29.svg.png" alt="American Express">
+                </div>
+            </div>
+        </section>
+
+        <section class="localizacao">
+            <div class="container">
+                <h3><i class="fas fa-map-marker-alt"></i> Nossa Localização</h3>
+                <p>Rua dos Gamers, 123 - Centro - Palhoça/SC</p>
+                <p>CEP: 88130-000 | Atendimento: Seg a Sex: 09h às 18h</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Páginas ocultas -->
+    <div id="pagina-loja" class="pagina-secao">
+        <div class="container">
+            <h2><i class="fas fa-store"></i> Navegue pela Loja</h2>
+            <div class="grade-produtos" id="produtos-loja"></div>
+            <button class="botao-secundario voltar-inicio">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-categorias" class="pagina-secao">
+        <div class="container">
+            <h2><i class="fas fa-th-list"></i> Categorias</h2>
+            <div class="lista-categorias">
+                <div class="card-categoria" data-categoria="consoles">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Consoles</h3>
+                    <p>PlayStation, Xbox, Nintendo e mais</p>
+                </div>
+                <div class="card-categoria" data-categoria="jogos">
+                    <i class="fas fa-dice"></i>
+                    <h3>Jogos</h3>
+                    <p>Para todos os consoles e plataformas</p>
+                </div>
+                <div class="card-categoria" data-categoria="acessorios">
+                    <i class="fas fa-headphones"></i>
+                    <h3>Acessórios</h3>
+                    <p>Controles, fones, cadeiras e outros</p>
+                </div>
+                <div class="card-categoria" data-categoria="pecas">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Peças e Manutenção</h3>
+                    <p>Peças originais e serviços técnicos</p>
+                </div>
+            </div>
+            <button class="botao-secundario voltar-inicio">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-atendimento" class="pagina-secao">
+        <div class="container">
+            <h2><i class="fas fa-headset"></i> Atendimento ao Cliente</h2>
+            <div class="conteudo-pagina">
+                <p><strong>Telefone:</strong> (48) 3333-1111</p>
+                <p><strong>WhatsApp:</strong> (48) 99999-8888</p>
+                <p><strong>E-mail:</strong> contato@gamehub.com.br</p>
+                <p><strong>Horário de atendimento:</strong> Segunda a Sexta: 09h às 18h | Sábado: 09h às 13h</p>
+                <h3>Dúvidas Frequentes:</h3>
+                <ul>
+                    <li>Como faço para comprar?</li>
+                    <li>Qual o prazo de entrega?</li>
+                    <li>Como trocar ou devolver um produto?</li>
+                </ul>
+            </div>
+            <button class="botao-secundario voltar-inicio">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-institucional" class="pagina-secao">
+        <div class="container">
+            <h2><i class="fas fa-building"></i> Institucional</h2>
+            <div class="conteudo-pagina">
+                <h3>Sobre a GameHub</h3>
+                <p>Somos uma loja especializada em videogames, fundada em 2020 em Palhoça/SC, com o objetivo de trazer os melhores produtos e experiência para os gamers de todo o Brasil.</p>
+                <h3>Missão</h3>
+                <p>Oferecer produtos de qualidade, preços justos e atendimento de excelência.</p>
+                <h3>Visão</h3>
+                <p>Ser referência nacional no mercado de jogos eletrônicos.</p>
+            </div>
+            <button class="botao-secundario voltar-inicio">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-pedidos" class="pagina-secao">
+        <div class="container">
+            <h2><i class="fas fa-box"></i> Meus Pedidos</h2>
+            <div class="conteudo-pagina" id="lista-pedidos">
+                <p>Faça login para ver seus pedidos.</p>
+            </div>
+            <button class="botao-secundario voltar-inicio">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <div id="pagina-rastrear" class="pagina-secao">
+        <div class="container">
+            <h2><i class="fas fa-truck"></i> Rastrear Pedido</h2>
+            <div class="conteudo-pagina">
+                <p>Digite o código de rastreamento recebido por e-mail:</p>
+                <input type="text" id="codigo-rastreio" placeholder="Ex: BR123456789SC">
+                <button class="botao-principal" id="botao-rastrear">Rastrear</button>
+                <div id="resultado-rastreio"></div>
+            </div>
+            <button class="botao-secundario voltar-inicio">Voltar para página inicial</button>
+        </div>
+    </div>
+
+    <!-- Modais -->
+    <div id="modal-carrinho" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar">&times;</span>
+            <h2><i class="fas fa-shopping-cart"></i> Seu Carrinho</h2>
+            <div id="itens-carrinho"></div>
+            <div class="total-carrinho">
+                <strong>Total: R$ <span id="valor-total">0,00</span></strong>
+            </div>
+            <div class="cep-entrega">
+                <h3><i class="fas fa-truck"></i> Calcular Entrega</h3>
+                <input type="text" id="cep-cliente" placeholder="Digite seu CEP (ex: 88130-000)" maxlength="9">
+                <button id="calcular-cep" class="botao-principal">Calcular</button>
+                <p id="resultado-cep"></p>
+            </div>
+            <button id="finalizar-compra" class="botao-principal">Finalizar Compra</button>
+        </div>
+    </div>
+
+    <div id="modal-conta" class="modal">
+        <div class="modal-conteudo">
+            <span class="fechar-conta fechar">&times;</span>
+            <h2 id="titulo-conta"><i class="fas fa-user-circle"></i> Minha Conta</h2>
+            <div id="area-usuario-logado" style="display: none;">
+                <p>Bem-vindo, <span id="nome-usuario"></span>!</p>
+                <ul class="menu-conta">
+                    <li><a href="#" id="link-pedidos"><i class="fas fa-box"></i> Meus Pedidos</a></li>
+                    <li><a href="#" id="link-rastrear"><i class="fas fa-truck"></i> Rastrear Pedido</a></li>
+                    <li><a href="#"><i class="fas fa-map-marker-alt"></i> Meus Endereços</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Configurações</a></li>
+                </ul>
+                <button id="sair-conta" class="botao-secundario">Sair</button>
+            </div>
+            <div id="area-login-cadastro">
+                <div class="botoes-login-social">
+                    <button class="botao-google"><i class="fab fa-google"></i> Entrar com Google</button>
+                    <button class="botao-telefone"><i class="fas fa-phone"></i> Entrar com Telefone</button>
+                </div>
+                <div class="separador"><span>ou cadastre-se com dados</span></div>
+                <form id="form-cadastro">
+                    <div class="grupo-campo">
+                        <label><i class="fas fa-envelope"></i> E-mail</label>
+                        <input type="email" id="email-cadastro" required placeholder="seuemail@dominio.com">
+                    </div>
+                    <div class="grupo-campo">
+                        <label><i class="fas fa-id-card"></i> CPF</label>
+                        <input type="text" id="cpf-cadastro" required placeholder="000.000.000-00" maxlength="14">
+                    </div>
+                    <div class="grupo-campo">
+                        <label><i class="fas fa-user"></i> Nome Completo</label>
+                        <input type="text" id="nome-cadastro" required placeholder="Seu nome completo">
+                    </div>
+                    <div class="grupo-campo">
+                        <label><i class="fas fa-phone"></i> Telefone</label>
+                        <input type="tel" id="telefone-cadastro" required placeholder="(48) 99999-9999" maxlength="15">
+                    </div>
+                    <div class="grupo-campo">
+                        <label><i class="fas fa-lock"></i> Senha</label>
+                        <input type="password" id="senha-cadastro" required placeholder="Digite sua senha">
+                    </div>
+                    <button type="submit" class="botao-principal">Criar Conta</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="rodape">
+        <div class="container">
+            <p>&copy; 2026 GameHub - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
