@@ -38,7 +38,3 @@ Este projeto foi desenvolvido como trabalho acadêmico, aplicando conceitos de a
 - **Git e GitHub**: Controle de versão e hospedagem do código
 - **Miro / Lucidchart**: Criação de diagramas, protótipos e modelagem do sistema
 - **GitHub Pages**: Hospedagem da versão estática do projeto
-
----
-
-## 🏗️ Arquitetura do Sistema
