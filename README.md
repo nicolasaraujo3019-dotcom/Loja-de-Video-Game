@@ -21,12 +21,12 @@ Este projeto foi desenvolvido como trabalho acadêmico, aplicando conceitos de a
 ✅ Interface responsiva para desktop e dispositivos móveis
 
 # Tecnologias Utilizadas
-# Frontend
+Frontend
 HTML5: Estrutura semântica e organizada das páginas
 CSS3: Estilização, layout responsivo e identidade visual
 JavaScript (ES6+): Lógica de interação, validações e dinâmicas da página
 Bibliotecas externas: Font Awesome (ícones), Google Fonts (tipografia)
-# Ferramentas de Apoio
+Ferramentas de Apoio
 Visual Studio Code: Editor de código recomendado
 Git e GitHub: Controle de versão e hospedagem do código
 Miro / Lucidchart: Criação de diagramas, protótipos e modelagem do sistema
