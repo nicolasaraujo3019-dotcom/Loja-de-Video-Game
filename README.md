@@ -11,14 +11,14 @@ GameHub é um sistema web de e-commerce especializado na comercialização de co
 Este projeto foi desenvolvido como trabalho acadêmico, aplicando conceitos de análise de requisitos, modelagem de sistemas, normalização de dados, padronização de código e boas práticas de desenvolvimento.
 
  # Principais Funcionalidades
- ✅ Navegação por categorias e busca de produtos
- ✅ Cadastro e autenticação de usuários com níveis de acesso
- ✅ Carrinho de compras temporário
- ✅ Cálculo automático de frete por CEP
- ✅ Finalização de pedidos e escolha de forma de pagamento
- ✅ Acompanhamento e rastreamento de pedidos
- ✅ Área administrativa para gerenciar produtos, categorias e pedidos
- ✅ Interface responsiva para desktop e dispositivos móveis
+✅ Navegação por categorias e busca de produtos
+✅ Cadastro e autenticação de usuários com níveis de acesso
+✅ Carrinho de compras temporário
+✅ Cálculo automático de frete por CEP
+✅ Finalização de pedidos e escolha de forma de pagamento
+✅ Acompanhamento e rastreamento de pedidos
+✅ Área administrativa para gerenciar produtos, categorias e pedidos
+✅ Interface responsiva para desktop e dispositivos móveis
 
 # Tecnologia Utilizadas
 
